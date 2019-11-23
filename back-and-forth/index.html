@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Back And Forth</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 520px;
+        height: 100%;
+      }
+      #canvas {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .box {
+        width: 3vw;
+        height: 3vw;
+        display: inline-block;
+        background-image: url("logo-1024px.png");
+        background-size: cover;
+      }
+      .mover {
+        position: absolute;
+        top: 0;
+      }
+      button {
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="canvas">
+      <div class="box mover"></div>
+      <div class="box mover"></div>
+      <div class="box mover"></div>
+    </div>
+    <button id="add10">Add 10</button>
+    <button id="sub10">Subtract 10</button>
+    <button id="toggle">Stop</button>
+  </body>
+  <script type="text/javascript" src="animation.js"></script>
+</html>
